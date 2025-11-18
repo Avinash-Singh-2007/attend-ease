@@ -3,6 +3,11 @@
 AttendEase is a clean and simple **web-based Attendance Management System** built using **HTML, CSS, and JavaScript**, with all data stored in **LocalStorage**.  
 The app works fully offline and requires no database or backend.
 
+
+🚀 **Live Demo:**  
+👉 https://avinash-singh-2007.github.io/attend-ease/
+
+
 ---
 
 ## 🚀 Features
