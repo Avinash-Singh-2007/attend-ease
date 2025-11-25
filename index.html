@@ -5,7 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>AttendEase</title>
   <link rel="icon" type="image/png" href="a-flat-minimal-logo-design-featuring-a-s_QAUueff8SD-r_okAXW89vQ_U4HkSPLSTymHd5Bdr2sAsQ.jpeg">
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     /* Modern CSS Reset */
@@ -26,13 +25,11 @@
       --shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
       --transition: all 0.3s ease;
     }
-
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-
     body {
       font-family: 'Inter', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       line-height: 1.6;
@@ -40,32 +37,38 @@
       background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
       min-height: 100vh;
     }
-
+    html{
+      scrollbar-width: none;
+    }
+    footer{
+      display: flex;
+      justify-content: center;
+      font-size: large;
+      background-color: rgb(58, 58, 58);
+      padding: 3px;
+    }
+    footer span{
+      font-size: medium;
+    }
     /* Header */
     header {
       background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
       color: white;
-      padding: 1.2rem 2rem;
+      padding: 10px 30px;
       box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
       display: flex;
       justify-content: space-between;
       align-items: center;
       border-bottom: 1px solid var(--primary-light);
     }
-
     .logo {
       display: flex;
       align-items: center;
-      gap: 12px;
+      gap: 15px;
       font-weight: 600;
       font-size: 1.4rem;
     }
-
-    .logo-icon {
-      font-size: 1.8rem;
-      color: var(--accent);
-    }
-
+   
     .user-info {
       display: flex;
       align-items: center;
@@ -76,7 +79,6 @@
       border-radius: 20px;
       border: 1px solid var(--primary-light);
     }
-
     /* Main Container */
     .container {
       width: 95%;
@@ -84,7 +86,6 @@
       margin: 2rem auto;
       padding: 0 1rem;
     }
-
     /* Cards */
     .card {
       background: linear-gradient(145deg, #2d2d2d, #252525);
@@ -95,25 +96,21 @@
       transition: var(--transition);
       border: 1px solid var(--primary-light);
     }
-
     .card:hover {
       box-shadow: 0 8px 25px rgba(0, 0, 0, 0.25);
       transform: translateY(-3px);
     }
-
     /* Typography */
     h1, h2, h3 {
       color: var(--light);
       margin-bottom: 1.2rem;
     }
-
     h2 {
       font-size: 1.5rem;
       display: flex;
       align-items: center;
       gap: 10px;
     }
-
     .section-title {
       font-size: 1.2rem;
       color: var(--accent);
@@ -121,17 +118,14 @@
       padding-bottom: 0.5rem;
       border-bottom: 1px solid var(--primary-light);
     }
-
     .muted {
       color: var(--gray);
       font-size: 0.9rem;
     }
-
     /* Form Elements */
     .form-group {
       margin-bottom: 1.2rem;
     }
-
     label {
       display: block;
       margin-bottom: 0.5rem;
@@ -139,7 +133,6 @@
       color: var(--light);
       margin: 10px;
     }
-
     input, select {
       width: 100%;
       padding: 0.75rem 1rem;
@@ -150,17 +143,14 @@
       background: var(--primary-dark);
       color: var(--light);
     }
-
     input:focus, select:focus {
       outline: none;
       border-color: var(--accent);
       box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.15);
     }
-
     input::placeholder {
       color: var(--gray);
     }
-
     /* Buttons */
     .btn {
       display: inline-flex;
@@ -177,62 +167,51 @@
       transition: var(--transition);
       text-decoration: none;
     }
-
     .btn-primary {
       background: var(--accent);
       color: white;
     }
-
     .btn-primary:hover {
       background: #0da271;
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
     }
-
     .btn-danger {
       background: var(--danger);
       color: white;
     }
-
     .btn-danger:hover {
       background: #dc2626;
       transform: translateY(-2px);
       box-shadow: 0 4px 12px rgba(239, 68, 68, 0.3);
     }
-
     .btn-outline {
       background: transparent;
       color: var(--accent);
       border: 1px solid var(--accent);
     }
-
     .btn-outline:hover {
       background: var(--accent);
       color: white;
     }
-
     .overflowx{
       overflow: auto;
     }
-
     .btn-sm {
       padding: 0.5rem 1rem;
       font-size: 0.85rem;
     }
-
     /* Grid System */
     .row {
       display: flex;
       flex-wrap: wrap;
       margin: 0 -0.75rem;
     }
-
     .col {
       flex: 1;
       padding: 0 0.75rem;
       min-width: 250px;
     }
-
     /* Tables */
     table {
       width: 100%;
@@ -243,7 +222,6 @@
       box-shadow: 0 0 0 1px var(--primary-light);
       overflow-x: auto ;
     }
-
     th {
       background: var(--primary);
       color: white;
@@ -252,21 +230,17 @@
       font-weight: 600;
       border-bottom: 1px solid var(--primary-light);
     }
-
     td {
       padding: 1rem;
       border-top: 1px solid var(--primary-light);
       color: var(--light);
     }
-
     tr:nth-child(even) {
       background-color: rgba(255, 255, 255, 0.05);
     }
-
     tr:hover {
       background-color: rgba(255, 255, 255, 0.08);
     }
-
     /* Dashboard Cards */
     .dashboard-cards {
       display: grid;
@@ -274,7 +248,6 @@
       gap: 1.5rem;
       margin: 1.5rem 0;
     }
-
     .stat-card {
       background: linear-gradient(145deg, #2d2d2d, #252525);
       border-radius: var(--border-radius);
@@ -287,37 +260,31 @@
       transition: var(--transition);
       border: 1px solid var(--primary-light);
     }
-
     .stat-card:hover {
       transform: translateY(-5px);
       box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
     }
-
     .stat-icon {
       font-size: 2.5rem;
       margin-bottom: 1rem;
       color: var(--accent);
     }
-
     .stat-value {
       font-size: 2rem;
       font-weight: 700;
       color: var(--light);
       margin-bottom: 0.5rem;
     }
-
     .stat-label {
       color: var(--gray);
       font-size: 0.9rem;
     }
-
     /* Login Page */
     .login-container {
       max-width: 450px;
       margin: 4rem auto;
       padding: 0 1rem;
     }
-
     .login-card {
       background: linear-gradient(145deg, #2d2d2d, #252525);
       border-radius: var(--border-radius);
@@ -326,116 +293,98 @@
       text-align: center;
       border: 1px solid var(--primary-light);
     }
-
     .login-icon {
       font-size: 3rem;
       color: var(--accent);
       margin-bottom: 1.5rem;
     }
-
     /* Utilities */
     .hidden {
       display: none;
     }
-
     .text-center {
       text-align: center;
     }
-
     .mt-2 {
       margin-top: 2rem;
     }
-
     .mb-2 {
       margin-bottom: 2rem;
     }
-
     .error {
       color: var(--danger);
       font-weight: 500;
       margin-top: 0.5rem;
     }
-
     .success {
       color: var(--accent);
       font-weight: 500;
       margin-top: 0.5rem;
     }
-
     /* Responsive */
     @media (max-width: 768px) {
       .row {
         flex-direction: column;
       }
-      
+     
       .col {
         width: 100%;
         margin-bottom: 1rem;
       }
-      
+     
       header {
         padding: 1rem;
         flex-direction: column;
         gap: 1rem;
         text-align: center;
       }
-      
+     
       .dashboard-cards {
         grid-template-columns: 1fr;
       }
-      
+     
       table {
         overflow-x: auto;
       }
     }
-
     /* Animations */
     @keyframes fadeIn {
       from { opacity: 0; transform: translateY(10px); }
       to { opacity: 1; transform: translateY(0); }
     }
-
     .fade-in {
       animation: fadeIn 0.5s ease forwards;
     }
-
     .marg{
       margin: 10px 0;
     }
-
     /* Tabs */
     .tabs {
       display: flex;
       border-bottom: 1px solid var(--primary-light);
       margin-bottom: 1.5rem;
-      gap: 7px;
+      gap: 15px;
     }
-
     .tab {
       cursor: pointer;
       border-bottom: 3px solid transparent;
       transition: var(--transition);
       color: var(--gray);
     }
-
     .tab.active {
       border-bottom: 3px solid var(--accent);
       color: var(--accent);
       font-weight: 600;
     }
-
     .tab:hover:not(.active) {
       color: var(--light);
     }
-
     .tab-content {
       display: none;
     }
-
     .tab-content.active {
       display: block;
     }
-
     /* Icons */
     .icon {
       display: inline-flex;
@@ -448,20 +397,16 @@
       color: var(--accent);
       margin-right: 10px;
     }
-
     /* Status indicators */
     .status-present {
       color: var(--accent);
     }
-
     .status-absent {
       color: var(--danger);
     }
-
     .status-pending {
       color: var(--warning);
     }
-
     /* Progress bars */
     .progress-bar {
       height: 8px;
@@ -470,13 +415,11 @@
       overflow: hidden;
       margin-top: 5px;
     }
-
     .progress-fill {
       height: 100%;
       background: var(--accent);
       border-radius: 4px;
     }
-
     /* Custom checkboxes */
     input[type="checkbox"] {
       width: 18px;
@@ -500,16 +443,15 @@
       <span id="currentUserRole"></span> | <span id="currentUserName"></span>
     </div>
   </header>
-
   <div class="container">
     <!-- LOGIN -->
     <section id="loginSection" class="login-container">
       <div class="login-card fade-in">
-        <div class="login-icon">
+        <div >
         </div>
         <h1>Welcome Back</h1>
         <p class="muted mb-2">Sign in to access your dashboard</p>
-        
+       
         <div class="form-group">
           <label><i class="fas fa-user-tag"></i> Role</label>
           <select id="role">
@@ -519,37 +461,33 @@
             <option value="Student">Student</option>
           </select>
         </div>
-
         <div class="form-group">
           <label><i class="fas fa-user"></i> Username</label>
-          <input id="username" placeholder="username">
+          <input id="username" placeholder="username" autocomplete="off">
         </div>
-
         <div class="form-group">
           <label><i class="fas fa-key"></i> Password</label>
           <input id="password" type="password" placeholder="password">
         </div>
-
         <button class="btn btn-primary" onclick="login()" style="width: 100%;">
           <i class="fas fa-sign-in-alt"></i> Login
         </button>
-        
+       
         <p id="loginMsg" class="muted mt-2"></p>
-        
-        <div class="mt-2">
+       
+        <!-- <div class="mt-2">
           <p class="muted">Default demo accounts <br> (if first run) : <br></p>
           <p><b>admin/admin</b>,<br> <b>hod1/hodpass</b>,<br> <b>fac1/facpass,</b> <br> <b>stu1/stupass</b></p>
-        </div>
+        </div> -->
       </div>
     </section>
-
     <!-- dashboards (one shown at a time) -->
     <section id="adminDashboard" class="hidden"></section>
     <section id="hodDashboard" class="hidden"></section>
     <section id="facultyDashboard" class="hidden"></section>
     <section id="studentDashboard" class="hidden"></section>
   </div>
-
+  <footer><pre>Made with <span><i class="fa-solid fa-heart"></i></span> by Avinash</pre></footer>
 <script>
 /* -------------------------
    Data model (localStorage)
@@ -557,17 +495,15 @@
    data = {
      Admin: { username: password, ... },
      HOD: { hodUser: { password, branch, batch }, ... },
-     Faculty: { facUser: { password, name }, ... },
+     Faculty: { branch: { facUser: { password, name }, ... }, ... },
      Student: { stuUser: { password, name }, ... },
-     Subjects: { facUser: [ { subject, code }, ... ], ... },
+     Subjects: { branch: { facUser: [ { subject, code }, ... ], ... }, ... },
      StudentsPerSubject: { subjCode: { stuUser: true, ... }, ... },
      Attendance: { subjCode: { 'YYYY-MM-DD': { stuUser: true/false, ... }, ... }, ... }
    }
 */
-
 function getData(){ return JSON.parse(localStorage.getItem('data')); }
 function setData(d){ localStorage.setItem('data', JSON.stringify(d)); }
-
 /* Initialize demo data only if no data exists yet */
 if(!localStorage.getItem('data')){
   const defaultData = {
@@ -576,13 +512,17 @@ if(!localStorage.getItem('data')){
       "hod1": { password: "hodpass", branch: "CSE", batch: "2023" }
     },
     Faculty: {
-      "fac1": { password: "facpass", name: "Alice" }
+      "CSE": {
+        "fac1": { password: "facpass", name: "Alice" }
+      }
     },
     Student: {
       "stu1": { password: "stupass", name: "Bob" }
     },
     Subjects: {
-      "fac1": [ { subject: "Mathematics", code: "MATH101" } ]
+      "CSE": {
+        "fac1": [ { subject: "Mathematics", code: "MATH101" } ]
+      }
     },
     StudentsPerSubject: {
       "MATH101": { "stu1": true }
@@ -597,14 +537,12 @@ if(!localStorage.getItem('data')){
   };
   setData(defaultData);
 }
-
 /* UI helpers */
 function showSection(id){
   document.querySelectorAll('section').forEach(s => s.classList.add('hidden'));
   document.getElementById(id).classList.remove('hidden');
   document.getElementById('loginMsg').textContent = '';
 }
-
 function updateUserInfo() {
   if (currentUser) {
     document.getElementById('userInfo').classList.remove('hidden');
@@ -614,7 +552,6 @@ function updateUserInfo() {
     document.getElementById('userInfo').classList.add('hidden');
   }
 }
-
 /* login */
 let currentUser = null;
 function login(){
@@ -622,7 +559,6 @@ function login(){
   const u = document.getElementById('username').value.trim();
   const p = document.getElementById('password').value.trim();
   const d = getData();
-
   // Admin: simple username->password mapping
   if(role === 'Admin'){
     if(d.Admin && d.Admin[u] && d.Admin[u] === p){
@@ -636,19 +572,38 @@ function login(){
       return;
     }
   }
-
-  // Other roles stored as objects with .password
-  if(d[role] && d[role][u] && d[role][u].password === p){
-    currentUser = { role: role, user: u };
-    updateUserInfo();
-    if(role === 'HOD'){ loadHODDashboard(); showSection('hodDashboard'); return; }
-    if(role === 'Faculty'){ loadFacultyDashboard(); showSection('facultyDashboard'); return; }
-    if(role === 'Student'){ loadStudentDashboard(); showSection('studentDashboard'); return; }
-  } else {
-    document.getElementById('loginMsg').innerHTML = "<span class='error'>Invalid credentials</span>";
+  // HOD and Student: global
+  if(['HOD', 'Student'].includes(role)){
+    if(d[role] && d[role][u] && d[role][u].password === p){
+      currentUser = { role: role, user: u };
+      updateUserInfo();
+      if(role === 'HOD'){ loadHODDashboard(); showSection('hodDashboard'); return; }
+      if(role === 'Student'){ loadStudentDashboard(); showSection('studentDashboard'); return; }
+    } else {
+      document.getElementById('loginMsg').innerHTML = "<span class='error'>Invalid credentials</span>";
+      return;
+    }
+  }
+  // Faculty: check across branches and collect all matching branches
+  if(role === 'Faculty'){
+    let foundBranches = [];
+    for(const branch in (d.Faculty || {})){
+      if(d.Faculty[branch] && d.Faculty[branch][u] && d.Faculty[branch][u].password === p){
+        foundBranches.push(branch);
+      }
+    }
+    if(foundBranches.length > 0){
+      currentUser = { role: role, user: u, branches: foundBranches };
+      updateUserInfo();
+      loadFacultyDashboard();
+      showSection('facultyDashboard');
+      return;
+    } else {
+      document.getElementById('loginMsg').innerHTML = "<span class='error'>Invalid credentials</span>";
+      return;
+    }
   }
 }
-
 /* ------------------------ ADMIN DASHBOARD ------------------------ */
 function loadAdminDashboard(){
   const container = document.getElementById('adminDashboard');
@@ -656,38 +611,38 @@ function loadAdminDashboard(){
     <div class="card fade-in">
       <h2><i class="fas fa-user-shield"></i> Admin Dashboard</h2>
       <p class="muted">Manage HOD accounts and system settings</p>
-      
+     
       <h3 class="section-title"><i class="fas fa-plus-circle"></i> Add New HOD</h3>
       <div class="row">
         <div class="col">
           <label><i class="fas fa-user"></i> HOD Username</label>
-          <input id="hodName" placeholder="hod username (eg. hod2)">
+          <input id="hodName" placeholder="hod username (eg. hod2)" autocomplete="off">
         </div>
         <div class="col">
           <label><i class="fas fa-key"></i> HOD Password</label>
-          <input id="hodPass" placeholder="password">
+          <input id="hodPass" placeholder="password" autocomplete="off">
         </div>
       </div>
       <div class="row">
         <div class="col">
           <label><i class="fas fa-code-branch"></i> Branch</label>
-          <input id="hodBranch" placeholder="CSE">
+          <input id="hodBranch" placeholder="CSE" autocomplete="off">
         </div>
         <div class="col">
           <label><i class="fas fa-calendar-alt"></i> Batch</label>
-          <input id="hodBatch" placeholder="2023">
+          <input id="hodBatch" placeholder="2023" autocomplete="off">
         </div>
       </div>
       <button class="btn btn-primary" onclick="addHOD()">
         <i class="fas fa-user-plus"></i> Add HOD
       </button>
     </div>
-    
+   
     <div class="card">
       <h3><i class="fas fa-list"></i> HOD Accounts</h3>
       <div id="hodList"></div>
     </div>
-    
+   
     <div class="text-center">
       <button class="btn btn-danger" onclick="logout()">
         <i class="fas fa-sign-out-alt"></i> Logout
@@ -696,7 +651,6 @@ function loadAdminDashboard(){
   `;
   loadHODs();
 }
-
 function addHOD(){
   const u = document.getElementById('hodName').value.trim();
   const p = document.getElementById('hodPass').value.trim();
@@ -714,7 +668,6 @@ function addHOD(){
   document.getElementById('hodBatch').value = '';
   loadHODs();
 }
-
 function removeHOD(user){
   if(!confirm('Remove HOD ' + user + '?')) return;
   const d = getData();
@@ -722,11 +675,10 @@ function removeHOD(user){
   setData(d);
   loadHODs();
 }
-
 function loadHODs(){
   const d = getData();
   const list = document.getElementById('hodList');
-  let html = '<div  class="overflowx" ><table><tr><th>Username</th><th>Password</th><th>Branch</th><th>Batch</th><th>Action</th></tr></div>';
+  let html = '<div class="overflowx" ><table><tr><th>Username</th><th>Password</th><th>Branch</th><th>Batch</th><th>Action</th></tr></div>';
   for(const h in (d.HOD||{})){
     const hod = d.HOD[h];
     html += `<tr>
@@ -740,7 +692,6 @@ function loadHODs(){
   html += '</table>';
   list.innerHTML = html;
 }
-
 /* ------------------------ HOD DASHBOARD ------------------------ */
 function loadHODDashboard(){
   const container = document.getElementById('hodDashboard');
@@ -748,44 +699,44 @@ function loadHODDashboard(){
     <div class="card fade-in">
       <h2><i class="fas fa-user-tie"></i> HOD Dashboard</h2>
       <p class="muted">Manage faculty accounts and subjects</p>
-      
+     
       <h3 class="section-title"><i class="fas fa-plus-circle"></i> Add Faculty & Subject</h3>
       <div class="form-group">
         <label><i class="fas fa-book"></i> Subject Name</label>
-        <input id="subjectName" placeholder="e.g. Data Structures">
+        <input id="subjectName" placeholder="e.g. Data Structures" autocomplete="off">
       </div>
-      
+     
       <div class="row">
         <div class="col">
           <label><i class="fas fa-hashtag"></i> Subject Code</label>
-          <input id="subjectCode" placeholder="e.g. DS101">
+          <input id="subjectCode" placeholder="e.g. DS101" autocomplete="off">
         </div>
         <div class="col">
           <label><i class="fas fa-chalkboard-teacher"></i> Faculty Username</label>
-          <input id="facultyUser" placeholder="e.g. fac2">
+          <input id="facultyUser" placeholder="e.g. fac2" autocomplete="off">
         </div>
       </div>
-      
+     
       <div class="form-group">
         <label><i class="fas fa-user"></i> Faculty Full Name</label>
-        <input id="facultyFullName" placeholder="e.g. John Doe">
+        <input id="facultyFullName" placeholder="e.g. John Doe" autocomplete="off">
       </div>
-      
+     
       <div class="form-group">
         <label><i class="fas fa-key"></i> Faculty Password</label>
-        <input id="facultyPass" placeholder="password">
+        <input id="facultyPass" placeholder="password" autocomplete="off">
       </div>
-      
+     
       <button class="btn btn-primary" onclick="addFaculty()">
         <i class="fas fa-user-plus"></i> Add Faculty & Subject
       </button>
     </div>
-    
+   
     <div class="card">
       <h3><i class="fas fa-list"></i> Faculties & Subjects</h3>
       <div id="facultyList"></div>
     </div>
-    
+   
     <div class="text-center">
       <button class="btn btn-danger" onclick="logout()">
         <i class="fas fa-sign-out-alt"></i> Logout
@@ -794,73 +745,75 @@ function loadHODDashboard(){
   `;
   loadFaculties();
 }
-
 function addFaculty(){
+  const d = getData();
+  const currentBranch = d.HOD[currentUser.user].branch;
   const subj = document.getElementById('subjectName').value.trim();
   const code = document.getElementById('subjectCode').value.trim();
   const user = document.getElementById('facultyUser').value.trim();
   const fname = document.getElementById('facultyFullName').value.trim();
   const pass = document.getElementById('facultyPass').value.trim();
   if(!subj || !code || !user || !fname || !pass){ alert('Fill all fields'); return; }
-
-  const d = getData();
   d.Faculty = d.Faculty || {};
   d.Subjects = d.Subjects || {};
-
-  // Check for unique subject code across all faculties
+  d.Faculty[currentBranch] = d.Faculty[currentBranch] || {};
+  d.Subjects[currentBranch] = d.Subjects[currentBranch] || {};
+  // Check for unique subject code across all branches
   let codeExists = false;
-  for(const f in d.Subjects){
-    if(d.Subjects[f] && d.Subjects[f].some(s => s.code === code)){
-      codeExists = true;
-      break;
+  for(const b in d.Subjects){
+    for(const f in d.Subjects[b]){
+      if(d.Subjects[b][f] && d.Subjects[b][f].some(s => s.code === code)){
+        codeExists = true;
+        break;
+      }
     }
+    if(codeExists) break;
   }
   if(codeExists){ alert('Subject code already in use'); return; }
-
-  // create/update faculty
-  if(d.Faculty[user]){
-    if(d.Faculty[user].name !== fname || d.Faculty[user].password !== pass){
-      alert('Faculty username exists. Name and password must match existing.');
+  // create/update faculty in this branch only
+  if(d.Faculty[currentBranch][user]){
+    if(d.Faculty[currentBranch][user].name !== fname || d.Faculty[currentBranch][user].password !== pass){
+      alert('Faculty username exists in this branch. Name and password must match existing.');
       return;
     }
   } else {
-    d.Faculty[user] = { password: pass, name: fname };
+    d.Faculty[currentBranch][user] = { password: pass, name: fname };
   }
-
-  // push subject to faculty's subject list
-  if(!d.Subjects[user]) d.Subjects[user] = [];
-  // avoid duplicate subject code for same faculty
-  const exists = d.Subjects[user].some(s => s.code === code);
+  // push subject to faculty's subject list in this branch
+  d.Subjects[currentBranch][user] = d.Subjects[currentBranch][user] || [];
+  // avoid duplicate subject code for same faculty in this branch
+  const exists = d.Subjects[currentBranch][user].some(s => s.code === code);
   if(exists){ alert('Subject code already assigned to this faculty'); return; }
-  d.Subjects[user].push({ subject: subj, code: code });
+  d.Subjects[currentBranch][user].push({ subject: subj, code: code });
   setData(d);
-  
+ 
   // Clear form
   document.getElementById('subjectName').value = '';
   document.getElementById('subjectCode').value = '';
   document.getElementById('facultyUser').value = '';
   document.getElementById('facultyFullName').value = '';
   document.getElementById('facultyPass').value = '';
-  
+ 
   loadFaculties();
 }
-
 function removeFaculty(user){
   if(!confirm('Remove faculty ' + user + ' and their subjects?')) return;
   const d = getData();
-  if(d.Faculty && d.Faculty[user]) delete d.Faculty[user];
-  if(d.Subjects && d.Subjects[user]) delete d.Subjects[user];
+  const currentBranch = d.HOD[currentUser.user].branch;
+  if(d.Faculty[currentBranch] && d.Faculty[currentBranch][user]) delete d.Faculty[currentBranch][user];
+  if(d.Subjects[currentBranch] && d.Subjects[currentBranch][user]) delete d.Subjects[currentBranch][user];
   setData(d);
   loadFaculties();
 }
-
 function loadFaculties(){
   const d = getData();
+  const currentBranch = d.HOD[currentUser.user].branch;
   const list = document.getElementById('facultyList');
   let html = '<div class="overflowx"><table><tr><th>Faculty Username</th><th>Faculty Name</th><th>Password</th><th>Subjects (name - code)</th><th>Action</th></tr></div>';
-  for(const f in (d.Faculty||{})){
-    const fac = d.Faculty[f];
-    const subs = d.Subjects && d.Subjects[f] ? d.Subjects[f] : [];
+  const branchFaculty = d.Faculty[currentBranch] || {};
+  for(const f in branchFaculty){
+    const fac = branchFaculty[f];
+    const subs = d.Subjects && d.Subjects[currentBranch] && d.Subjects[currentBranch][f] ? d.Subjects[currentBranch][f] : [];
     const subList = subs.map(s => `${s.subject} (${s.code})`).join(', ');
     html += `<tr>
       <td><i class="fas fa-user"></i> ${f}</td>
@@ -873,26 +826,28 @@ function loadFaculties(){
   html += '</table>';
   list.innerHTML = html;
 }
-
 /* ------------------------ FACULTY DASHBOARD ------------------------ */
 function loadFacultyDashboard(){
   const d = getData();
-  const subjects = (d.Subjects && d.Subjects[currentUser.user]) ? d.Subjects[currentUser.user] : [];
-
+  const branches = currentUser.branches;
+  let allSubjects = [];
+  for(const branch of branches){
+    const subjects = (d.Subjects && d.Subjects[branch] && d.Subjects[branch][currentUser.user]) ? d.Subjects[branch][currentUser.user] : [];
+    subjects.forEach(s => allSubjects.push({...s, branch}));
+  }
   // build subject options
   let subjectOptions = '';
-  if(subjects.length){
-    subjectOptions = subjects.map(s => `<option value="${s.code}">${s.subject} (${s.code})</option>`).join('');
+  if(allSubjects.length){
+    subjectOptions = allSubjects.map(s => `<option value="${s.code}">${s.subject} (${s.code}) - ${s.branch}</option>`).join('');
   } else {
     subjectOptions = '<option value="">-- no subjects assigned --</option>';
   }
-
   const container = document.getElementById('facultyDashboard');
   container.innerHTML = `
     <div class="card fade-in">
       <h2><i class="fas fa-chalkboard-teacher"></i> Faculty Dashboard</h2>
       <p class="muted marg">Manage students and attendance for your subjects</p>
-      
+     
       <div class="tabs">
         <div class="tab active" onclick="switchTab('students')">
           <i class="fas fa-users"></i> Manage Students
@@ -904,35 +859,35 @@ function loadFacultyDashboard(){
           <i class="fas fa-chart-bar"></i> View Records
         </div>
       </div>
-      
+     
       <div id="students-tab" class="tab-content active">
         <h3 class="section-title"><i class="fas fa-book"></i> Your Subjects</h3>
         <select id="facultySubject" onchange="loadStudents()">${subjectOptions}</select>
-        
+       
         <h3 class="section-title"><i class="fas fa-user-plus"></i> Add Student to Selected Subject</h3>
         <div class="row">
           <div class="col">
             <label><i class="fas fa-user"></i> Student Username</label>
-            <input id="studentUser" placeholder="e.g. stu2">
+            <input id="studentUser" placeholder="e.g. stu2" autocomplete="off">
           </div>
           <div class="col">
             <label><i class="fas fa-id-card"></i> Student Full Name</label>
-            <input id="studentFullName" placeholder="e.g. Ramesh">
+            <input id="studentFullName" placeholder="e.g. Ramesh" autocomplete="off">
           </div>
         </div>
         <div class="form-group">
           <label><i class="fas fa-key"></i> Student Password</label>
-          <input id="studentPass" placeholder="password">
+          <input id="studentPass" placeholder="password" autocomplete="off">
         </div>
-        
+       
         <div class="row">
           <div class="col"><button class="btn btn-primary" onclick="addStudent()"><i class="fas fa-user-plus"></i> Add Student</button></div>
           <div class="col"><button class="btn btn-danger" onclick="removeStudentByInput()"><i class="fas fa-user-minus"></i> Remove Student (by username)</button></div>
         </div>
-        
+       
         <div id="studentList"></div>
       </div>
-      
+     
       <div id="attendance-tab" class="tab-content">
         <h3 class="section-title"><i class="fas fa-clipboard-check"></i> Mark Attendance (selected subject)</h3>
         <div class="row">
@@ -953,47 +908,50 @@ function loadFacultyDashboard(){
           <i class="fas fa-save"></i> Save Attendance
         </button>
       </div>
-      
+     
       <div id="records-tab" class="tab-content">
+        <h3 class="section-title"><i class="fas fa-book"></i> Select Subject for Records</h3>
+        <select id="recordsSubject" onchange="loadAttendanceList()">${subjectOptions}</select>
         <div id="attendanceList"></div>
       </div>
     </div>
-    
+   
     <div class="text-center">
       <button class="btn btn-danger" onclick="logout()">
         <i class="fas fa-sign-out-alt"></i> Logout
       </button>
     </div>
   `;
-  
-  if(subjects.length){
+ 
+  if(allSubjects.length){
     document.getElementById('attendanceDate').value = new Date().toISOString().slice(0,10);
-    document.getElementById('attendanceSubject').value = subjects[0].code;
+    const firstCode = allSubjects[0].code;
+    document.getElementById('facultySubject').value = firstCode;
+    document.getElementById('attendanceSubject').value = firstCode;
+    document.getElementById('recordsSubject').value = firstCode;
   }
   loadStudents();
 }
-
 function switchTab(tabName) {
   // Hide all tab contents
   document.querySelectorAll('.tab-content').forEach(tab => {
     tab.classList.remove('active');
   });
-  
+ 
   // Show selected tab content
   document.getElementById(`${tabName}-tab`).classList.add('active');
-  
+ 
   // Update active tab
   document.querySelectorAll('.tab').forEach(tab => {
     tab.classList.remove('active');
   });
   event.target.classList.add('active');
-  
+ 
   // Load data if needed
   if (tabName === 'records') {
     loadAttendanceList();
   }
 }
-
 function addStudent(){
   const subjCodeEl = document.getElementById('facultySubject');
   if(!subjCodeEl) { alert('No subject selected'); return; }
@@ -1003,14 +961,11 @@ function addStudent(){
   const name = document.getElementById('studentFullName').value.trim();
   const pass = document.getElementById('studentPass').value.trim();
   if(!user || !name || !pass){ alert('Fill student username, name and password'); return; }
-
   const d = getData();
   d.StudentsPerSubject = d.StudentsPerSubject || {};
   d.Student = d.Student || {};
-
   if(!d.StudentsPerSubject[subjCode]) d.StudentsPerSubject[subjCode] = {};
   if(d.StudentsPerSubject[subjCode][user]){ alert('Student already added to this subject'); return; }
-
   const isNew = !d.Student[user];
   if(!isNew){
     if(d.Student[user].name !== name || d.Student[user].password !== pass){
@@ -1018,22 +973,19 @@ function addStudent(){
       return;
     }
   }
-
   d.StudentsPerSubject[subjCode][user] = true;
   if(isNew){
     d.Student[user] = { name: name, password: pass };
   }
-
   setData(d);
-  
+ 
   // Clear form
   document.getElementById('studentUser').value = '';
   document.getElementById('studentFullName').value = '';
   document.getElementById('studentPass').value = '';
-  
+ 
   loadStudents();
 }
-
 function removeStudentByInput(){
   const subjCodeEl = document.getElementById('facultySubject');
   if(!subjCodeEl) { alert('No subject selected'); return; }
@@ -1042,7 +994,6 @@ function removeStudentByInput(){
   if(!user){ alert('Enter student username to remove'); return; }
   removeStudentFromSubject(user, subjCode);
 }
-
 function removeStudentFromSubject(user, subjCode){
   if(!confirm(`Remove student ${user} from subject ${subjCode}?`)) return;
   const d = getData();
@@ -1054,7 +1005,6 @@ function removeStudentFromSubject(user, subjCode){
   setData(d);
   loadStudents();
 }
-
 function loadStudents(){
   const d = getData();
   const subjCodeEl = document.getElementById('facultySubject');
@@ -1062,7 +1012,6 @@ function loadStudents(){
   const subjCode = subjCodeEl.value;
   const subjObj = findSubjectByCode(subjCode) || { subject:'-', code: subjCode || '-' };
   const students = (d.StudentsPerSubject && d.StudentsPerSubject[subjCode]) ? d.StudentsPerSubject[subjCode] : {};
-
   // student table
   let html = `<h3 class="section-title"><i class="fas fa-users"></i> Students in ${subjObj.subject} (${subjObj.code})</h3>`;
   html += '<div class="overflowx" ><table><tr><th>Username</th><th>Name</th><th>Password</th><th>Action</th></tr></div>';
@@ -1078,12 +1027,10 @@ function loadStudents(){
   }
   html += '</table>';
   document.getElementById('studentList').innerHTML = html;
-
   // Clear attendance mark table
   document.getElementById('attendanceMarkTable').innerHTML = '';
   document.getElementById('saveAttendanceBtn').classList.add('hidden');
 }
-
 function loadAttendanceForDate(){
   const subjCodeEl = document.getElementById('attendanceSubject');
   const dateEl = document.getElementById('attendanceDate');
@@ -1091,11 +1038,9 @@ function loadAttendanceForDate(){
   const subjCode = subjCodeEl.value;
   const date = dateEl.value;
   if(!subjCode || !date) { alert('Select subject and date'); return; }
-
   const d = getData();
   const students = d.StudentsPerSubject?.[subjCode] || {};
   const att = d.Attendance?.[subjCode]?.[date] || {};
-
   let html = `<h4 class="section-title"><i class="fas fa-calendar-alt"></i> Attendance for ${date}</h4>`;
   html += '<table><tr><th>Student</th><th>Present</th></tr>';
   for(const u in students){
@@ -1108,7 +1053,6 @@ function loadAttendanceForDate(){
   document.getElementById('attendanceMarkTable').innerHTML = html;
   document.getElementById('saveAttendanceBtn').classList.remove('hidden');
 }
-
 function saveAttendance(){
   const subjCodeEl = document.getElementById('attendanceSubject');
   const dateEl = document.getElementById('attendanceDate');
@@ -1116,7 +1060,6 @@ function saveAttendance(){
   const subjCode = subjCodeEl.value;
   const date = dateEl.value;
   if(!subjCode || !date) { alert('Select subject and date'); return; }
-
   const d = getData();
   const students = d.StudentsPerSubject?.[subjCode] || {};
   d.Attendance = d.Attendance || {};
@@ -1133,12 +1076,11 @@ function saveAttendance(){
   loadAttendanceForDate(); // Refresh the table to show saved state
   alert('Attendance saved for ' + date);
 }
-
 function loadAttendanceList(){
-  const d = getData();
-  const subjCodeEl = document.getElementById('facultySubject');
+  let subjCodeEl = document.getElementById('facultySubject') || document.getElementById('attendanceSubject') || document.getElementById('recordsSubject');
   if(!subjCodeEl) return;
   const subjCode = subjCodeEl.value;
+  const d = getData();
   const att = d.Attendance?.[subjCode] || {};
   const dates = Object.keys(att);
   const students = d.StudentsPerSubject?.[subjCode] || {};
@@ -1173,7 +1115,6 @@ function loadAttendanceList(){
   html += '</table>';
   document.getElementById('attendanceList').innerHTML = html;
 }
-
 /* ------------------------ STUDENT DASHBOARD ------------------------ */
 function loadStudentDashboard(){
   const d = getData();
@@ -1183,7 +1124,7 @@ function loadStudentDashboard(){
       <h2><i class="fas fa-user-graduate"></i> Student Dashboard</h2>
       <p class="muted">View your attendance records across subjects</p>
   `;
-  
+ 
   const sps = d.StudentsPerSubject || {};
   const enrolled = [];
   for(const code in sps){
@@ -1193,7 +1134,7 @@ function loadStudentDashboard(){
       enrolled.push({code, name: subjName});
     }
   }
-  
+ 
   if (enrolled.length === 0) {
     html += '<p class="muted">You are not enrolled in any subjects yet.</p>';
   } else {
@@ -1211,7 +1152,7 @@ function loadStudentDashboard(){
       }
       const per = total ? ((present/total)*100).toFixed(1) : '0.0';
       const statusClass = per >= 75 ? 'status-present' : per >= 50 ? 'status-pending' : 'status-absent';
-      
+     
       html += `
         <div class="stat-card">
           <div class="stat-icon"><i class="fas fa-book"></i></div>
@@ -1225,7 +1166,7 @@ function loadStudentDashboard(){
       `;
     }
     html += '</div>';
-    
+   
     // Detailed view
     for(const sub of enrolled){
       html += `<h3 class="section-title"><i class="fas fa-book"></i> ${sub.name} (${sub.code})</h3>`;
@@ -1247,32 +1188,31 @@ function loadStudentDashboard(){
       html += '</table>';
     }
   }
-  
+ 
   html += '</div>';
   html += '<div class="text-center"><button class="btn btn-danger" onclick="logout()"><i class="fas fa-sign-out-alt"></i> Logout</button></div>';
   document.getElementById('studentDashboard').innerHTML = html;
 }
-
 /* ------------------------ Helpers ------------------------ */
 function findSubjectByCode(code){
   if(!code) return null;
   const d = getData();
   const subjectsMap = d.Subjects || {};
-  for(const fac in subjectsMap){
-    const arr = subjectsMap[fac] || [];
-    for(const s of arr){
-      if(s.code === code) return { subject: s.subject, code: s.code, faculty: fac };
+  for(const branch in subjectsMap){
+    for(const fac in subjectsMap[branch]){
+      const arr = subjectsMap[branch][fac] || [];
+      for(const s of arr){
+        if(s.code === code) return { subject: s.subject, code: s.code, faculty: fac };
+      }
     }
   }
   return null;
 }
-
 function logout(){
   currentUser = null;
   updateUserInfo();
   showSection('loginSection');
 }
-
 /* end of script */
 </script>
 </body>
